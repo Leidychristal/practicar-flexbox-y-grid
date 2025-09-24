@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #d8d7d7;
+    color: rgb(8, 224, 141);
+}
+header, footer {
+    text-align: center;
+    background: #4b1414;
+    padding: 20px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+}
+.formas-container {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+.square{
+    width: 100px;
+    height: 100px;
+    background: blue;
+    border: 5px solid red;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 200px;
+}
+.square:hover{
+    background-color: rgb(212, 14, 136);
+    color: yellow;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.rectangle{
+    width: 200px;
+    height: 100px;
+    background: green;
+    border: 5px solid yellow;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+}
+.rectangle:hover{
+    background-color: rgb(14, 136, 212);
+    color: brown;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.triangulo{
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid aqua;
+    filter: drop-shadow(5px 5px 15px black);
+
+
+}.triangulo:hover{
+    background-color: aqua;
+    color: brown;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.circulo{
+    width: 100px;
+    height: 100px;
+    background: purple;
+    border: 5px solid rgb(14, 13, 13);
+    border-radius: 50%;
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    text-align: center;
+    line-height: 100px;
+}
+.circulo:hover{
+    background-color: rgb(190, 13, 43);
+    color: rgb(73, 3, 185);
+    border-style: dashed;
+    transition: 0.5s;
+}
